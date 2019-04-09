@@ -619,7 +619,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/patdev/Desktop/Class Work/todotest/pages/components/AddTodo.js";
 
 var AddTodo =
 /*#__PURE__*/
@@ -668,22 +667,12 @@ function (_Component) {
           borderRadius: '0.25rem',
           border: '1px solid grey',
           margin: '1rem 0'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        },
-        __self: this
+        }
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("form", {
         onSubmit: this.onSubmit,
         style: {
           display: 'flex'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
+        }
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
         type: "text",
         name: "title",
@@ -694,24 +683,14 @@ function (_Component) {
           border: 'none'
         },
         value: this.state.title,
-        onChange: this.onChange,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        __self: this
+        onChange: this.onChange
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
         type: "submit",
         value: "Submit",
-        className: "btn btn-primary",
+        className: "btn btn-success",
         style: {
           flex: '1'
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: this
+        }
       })));
     }
   }]);
@@ -863,8 +842,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! sweetalert2 */ "sweetalert2");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_16__);
 
 
 
@@ -874,8 +851,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-var _jsxFileName = "/home/patdev/Desktop/Class Work/todotest/pages/components/Todo.js";
 
 
 
@@ -924,16 +899,6 @@ function (_Component) {
           return todo.id !== id;
         })
       });
-
-      sweetalert2__WEBPACK_IMPORTED_MODULE_16___default.a.fire({
-        position: 'top-end',
-        type: 'success',
-        title: '<h4>Todo Deleted</h4>',
-        showConfirmButton: false,
-        width: '300px',
-        height: '150px',
-        timer: 2000
-      });
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "addTodo", function (title) {
@@ -945,16 +910,6 @@ function (_Component) {
 
       _this.setState({
         todos: [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_this.state.todos), [newTodo])
-      });
-
-      sweetalert2__WEBPACK_IMPORTED_MODULE_16___default.a.fire({
-        position: 'top-end',
-        type: 'success',
-        title: '<h4>Todo Added</h4>',
-        showConfirmButton: false,
-        width: '300px',
-        height: '150px',
-        timer: 2000
       });
 
       /*#__PURE__*/
@@ -1006,23 +961,13 @@ function (_Component) {
 
       // console.log('inside todo component', this.props.props.todos);
       return [react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_AddTodo__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        addTodo: this.addTodo,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 79
-        },
-        __self: this
+        addTodo: this.addTodo
       }), this.state.todos.map(function (todo) {
         return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_TodoItem__WEBPACK_IMPORTED_MODULE_11__["default"], {
           key: todo.id,
           todo: todo,
           markComplete: _this2.markComplete,
-          delTodo: _this2.delTodo,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 81
-          },
-          __self: this
+          delTodo: _this2.delTodo
         });
       })];
     }
@@ -1201,7 +1146,7 @@ var Index = function Index(props) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
     className: "lead",
     style: paragraph
-  }, "Add your chores, tick if its completed and delete if you are finished"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+  }, "Add your Todos, tick if its completed and delete if you are finished"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "mb-4"
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Todo__WEBPACK_IMPORTED_MODULE_4__["default"], {
     props: props
@@ -1422,17 +1367,6 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("regenerator-runtime");
-
-/***/ }),
-
-/***/ "sweetalert2":
-/*!******************************!*\
-  !*** external "sweetalert2" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("sweetalert2");
 
 /***/ }),
 

@@ -9,19 +9,19 @@ module.exports = [
   {
     // id: 2,
     id:uuid.v4(),
-    title: "Learn Progressive Web App",
+    title: "Learn Travis CI",
     completed: false
   },
   {
     //   id: 3,
     id:uuid.v4(),
-    title: "Learn React Router and Next js links",
+    title: "Learn React Native",
     completed: true
   },
   {
     //   id: 4,
     id:uuid.v4(),
-    title: "Read documentation of React js",
+    title: "Learn SQL",
     completed: true
   },
   {
@@ -33,7 +33,7 @@ module.exports = [
   {
     //   id: 5,
     id:uuid.v4(),
-    title: "Learn Redux and its implementation",
+    title: "Attend a bootcamp",
     completed: false
   }
 ];

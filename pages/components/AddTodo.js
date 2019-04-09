@@ -25,7 +25,7 @@ export class AddTodo extends Component {
           value = {this.state.title}
           onChange = {this.onChange}
           />
-          <input type="submit" value="Submit" className = "btn btn-primary" style = {{flex:'1'}}/>
+          <input type="submit" value="Submit" className = "btn btn-success" style = {{flex:'1'}}/>
         </form>
       </div>
     );

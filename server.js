@@ -54,7 +54,7 @@ app
 
     server.listen(PORT, err => {
       if (err) throw err;
-      console.log(`Server Started at http://localhost:${PORT}`);
+      console.log(`> Ready on http://localhost:${PORT}`);
     });
   })
   .catch(ex => {

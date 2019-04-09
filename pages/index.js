@@ -10,7 +10,7 @@ const Index = props => (
       <div>
         <Header />
         <p className="lead" style={paragraph}>
-          Add your chores, tick if its completed and delete if you are finished
+          Add your Todos, tick if its completed and delete if you are finished
         </p>
         <div className="mb-4">
           <Todo props = {props}/>
