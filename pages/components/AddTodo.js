@@ -16,7 +16,7 @@ export class AddTodo extends Component {
     }
   render() {
     return (
-      <div style = {{borderRadius: '0.25rem', border: 'none', margin: '1rem 0'}}>
+      <div style = {{borderRadius: '0.25rem', border: '1px solid grey', margin: '1rem 0'}}>
         <form onSubmit = {this.onSubmit} style = {{display: 'flex'}}>
           <input type="text"
           name="title"
@@ -25,7 +25,7 @@ export class AddTodo extends Component {
           value = {this.state.title}
           onChange = {this.onChange}
           />
-          <input type="submit" value="Submit" className = "btn btn-success" style = {{flex:'1'}}/>
+          <input type="submit" value="Submit" className = "btn btn-primary" style = {{flex:'1'}}/>
         </form>
       </div>
     );
